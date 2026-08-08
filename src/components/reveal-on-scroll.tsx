@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, useReducedMotion } from "motion/react";
-import { ReactNode, useEffect, useState } from "react";
+import { motion, useInView, useReducedMotion } from "motion/react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 
 type RevealOnScrollProps = {
   children: ReactNode;
@@ -14,6 +14,11 @@ export function RevealOnScroll({
 }: RevealOnScrollProps) {
   const prefersReducedMotion = useReducedMotion();
   const [mounted, setMounted] = useState(false);
+  const revealRef = useRef<HTMLDivElement>(null);
+  const inView = useInView(revealRef, {
+    once: true,
+    margin: "0px 0px -10% 0px",
+  });
 
   useEffect(() => {
     setMounted(true);
@@ -23,10 +28,12 @@ export function RevealOnScroll({
 
   return (
     <motion.div
+      ref={revealRef}
       className={className}
-      initial={shouldAnimate ? { opacity: 0, y: 20 } : false}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "0px 0px -10% 0px" }}
+      initial={false}
+      animate={
+        shouldAnimate && !inView ? { opacity: 0, y: 20 } : { opacity: 1, y: 0 }
+      }
       transition={{ duration: 0.45, ease: "easeOut" }}
     >
       {children}
