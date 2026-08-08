@@ -38,13 +38,15 @@ export function VisionTimeline() {
         </div>
 
         <div className="mt-12 max-w-2xl">
-          <ol className="relative">
-            <div
-              className="absolute bottom-[6.5rem] left-2 top-2 w-px bg-border"
-              aria-hidden="true"
-            />
-            {milestones.map(({ title, detail }) => (
-              <li key={title} className="relative flex h-28 gap-6">
+          <ol>
+            {milestones.map(({ title, detail }, index) => (
+              <li key={title} className="relative flex gap-6 pb-8 last:pb-0">
+                {index < milestones.length - 1 && (
+                  <span
+                    className="absolute bottom-0 left-2 top-2 w-px bg-border"
+                    aria-hidden="true"
+                  />
+                )}
                 <span
                   className="relative z-10 size-4 shrink-0 rounded-full border-4 border-background bg-primary"
                   aria-hidden="true"
