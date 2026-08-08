@@ -5,6 +5,7 @@ import {
   ComputerScienceRoadmap,
   QuranPractice,
 } from "@/components/system-practice";
+import { FinancialSystem } from "@/components/financial-system";
 import { VisionTimeline } from "@/components/vision-timeline";
 import { Workspace } from "@/components/workspace";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <ComputerScienceRoadmap />
       <QuranPractice />
       <Workspace />
+      <FinancialSystem />
       <VisionTimeline />
       <section
         id="family"
