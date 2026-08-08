@@ -1,6 +1,10 @@
 import { Hero } from "@/components/hero";
 import { CurrentState } from "@/components/current-state";
 import { SixPillars } from "@/components/six-pillars";
+import {
+  ComputerScienceRoadmap,
+  QuranPractice,
+} from "@/components/system-practice";
 import { VisionTimeline } from "@/components/vision-timeline";
 
 export default function Home() {
@@ -9,6 +13,8 @@ export default function Home() {
       <Hero />
       <CurrentState />
       <SixPillars />
+      <ComputerScienceRoadmap />
+      <QuranPractice />
       <VisionTimeline />
       <section
         id="family"
