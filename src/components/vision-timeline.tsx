@@ -48,7 +48,7 @@ export function VisionTimeline() {
                   />
                 )}
                 <span
-                  className="relative z-10 size-4 shrink-0 rounded-full border-4 border-background bg-primary"
+                  className="relative z-10 size-4 shrink-0 rounded-full border-4 border-background bg-steel"
                   aria-hidden="true"
                 />
                 <div className="min-w-0 pb-1">

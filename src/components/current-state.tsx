@@ -48,7 +48,7 @@ export function CurrentState() {
               className="rounded-lg border border-border bg-muted/20 p-6 shadow-sm"
             >
               <Icon
-                className="size-5 text-primary"
+                className="size-5 text-steel"
                 strokeWidth={1.75}
                 aria-hidden="true"
               />

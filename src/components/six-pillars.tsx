@@ -73,11 +73,11 @@ export function SixPillars() {
               key={title}
               tabIndex={0}
               aria-label={`${title} pillar`}
-              className="group rounded-md border border-border bg-muted/20 p-6 shadow-sm transition-[transform,border-color] duration-200 ease-out hover:-translate-y-1 hover:border-primary/40 focus-visible:-translate-y-1 focus-visible:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 motion-reduce:transform-none motion-reduce:transition-none"
+              className="group rounded-md border border-border bg-muted/20 p-6 shadow-sm transition-[transform,border-color] duration-200 ease-out hover:-translate-y-1 hover:border-steel/60 focus-visible:-translate-y-1 focus-visible:border-steel/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 motion-reduce:transform-none motion-reduce:transition-none"
             >
               <div className="flex items-start justify-between gap-4">
                 <Icon
-                  className="size-5 text-primary"
+                  className="size-5 text-steel"
                   strokeWidth={1.75}
                   aria-hidden="true"
                 />

@@ -71,7 +71,7 @@ export function ConsistencyChart() {
             />
             <Bar
               dataKey="sessions"
-              fill="hsl(var(--primary))"
+              fill="hsl(var(--sage))"
               radius={[4, 4, 0, 0]}
             />
           </BarChart>

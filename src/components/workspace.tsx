@@ -101,12 +101,12 @@ export function Workspace() {
                 key={title}
                 className={`rounded-lg border bg-muted/20 p-6 shadow-sm ${
                   isLaptop
-                    ? "border-primary/40 bg-primary/[0.04]"
+                    ? "border-steel/50 bg-steel/[0.05]"
                     : "border-border"
                 }`}
               >
                 <Icon
-                  className="size-5 text-primary"
+                  className="size-5 text-steel"
                   strokeWidth={1.75}
                   aria-hidden="true"
                 />
@@ -123,7 +123,7 @@ export function Workspace() {
                       className="flex gap-3 text-sm leading-6 text-muted-foreground"
                     >
                       <ArrowRight
-                        className="mt-1 size-4 shrink-0 text-primary"
+                        className="mt-1 size-4 shrink-0 text-steel"
                         aria-hidden="true"
                       />
                       <span>{point}</span>
@@ -151,7 +151,7 @@ export function Workspace() {
 
         <div className="mt-10 rounded-lg border border-border bg-muted/20 p-5 sm:p-8">
           <div className="flex items-center gap-3 text-sm text-muted-foreground">
-            <ShieldCheck className="size-5 text-primary" aria-hidden="true" />
+            <ShieldCheck className="size-5 text-steel" aria-hidden="true" />
             <span>
               Stage {stage + 1} of {independenceStages.length}
             </span>
@@ -173,7 +173,7 @@ export function Workspace() {
               value={stage}
               onChange={(event) => setStage(Number(event.target.value))}
               aria-valuetext={currentStage.title}
-              className="h-11 w-full cursor-pointer rounded-full accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="h-11 w-full cursor-pointer rounded-full accent-steel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             />
             <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-5">
               {independenceStages.map(({ title }, index) => (
@@ -183,7 +183,7 @@ export function Workspace() {
                   onClick={() => setStage(index)}
                   className={`min-h-11 rounded-sm text-left text-xs leading-5 transition-colors hover:bg-muted focus-visible:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring motion-reduce:transition-none ${
                     index === stage
-                      ? "font-medium text-accent-fg"
+                      ? "font-medium text-steel-fg"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                   aria-label={`Select ${title}`}
@@ -191,7 +191,7 @@ export function Workspace() {
                 >
                   <span
                     className={`mb-2 block h-1 rounded-full ${
-                      index <= stage ? "bg-primary" : "bg-border"
+                      index <= stage ? "bg-steel" : "bg-border"
                     }`}
                     aria-hidden="true"
                   />

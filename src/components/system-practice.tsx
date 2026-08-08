@@ -90,16 +90,16 @@ export function ComputerScienceRoadmap() {
             >
               {index < roadmap.length - 1 && (
                 <ArrowRight
-                  className="absolute -right-3 top-1/2 z-10 hidden size-5 -translate-y-1/2 text-primary md:block"
+                  className="absolute -right-3 top-1/2 z-10 hidden size-5 -translate-y-1/2 text-steel md:block"
                   aria-hidden="true"
                 />
               )}
               <div className="flex items-center justify-between">
-                <span className="text-xs font-medium tabular-nums text-accent-fg">
+                <span className="text-xs font-medium tabular-nums text-steel-fg">
                   0{index + 1}
                 </span>
                 <Icon
-                  className="size-5 text-primary"
+                  className="size-5 text-steel"
                   strokeWidth={1.75}
                   aria-hidden="true"
                 />
@@ -144,11 +144,11 @@ export function QuranPractice() {
               <li key={title} className="relative flex gap-4 md:block">
                 {index < quranCycle.length - 1 && (
                   <ArrowRight
-                    className="absolute -right-3 top-6 z-10 hidden size-5 text-primary md:block"
+                    className="absolute -right-3 top-6 z-10 hidden size-5 text-steel md:block"
                     aria-hidden="true"
                   />
                 )}
-                <span className="flex size-10 shrink-0 items-center justify-center rounded-full border border-primary/40 text-sm font-medium text-accent-fg">
+                <span className="flex size-10 shrink-0 items-center justify-center rounded-full border border-steel/60 text-sm font-medium text-steel-fg">
                   0{index + 1}
                 </span>
                 <div className="min-w-0 md:mt-5">
@@ -164,7 +164,7 @@ export function QuranPractice() {
           </ol>
 
           <div className="mt-8 flex items-center gap-3 border-t border-border pt-6 text-sm text-muted-foreground">
-            <RefreshCw className="size-4 text-primary" aria-hidden="true" />
+            <RefreshCw className="size-4 text-steel" aria-hidden="true" />
             <span>Return to Recite with one clear improvement in mind.</span>
           </div>
         </div>

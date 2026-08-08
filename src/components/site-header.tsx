@@ -126,7 +126,7 @@ export function SiteHeader() {
       </div>
 
       <motion.div
-        className="absolute inset-x-0 bottom-0 h-[2px] origin-left bg-primary"
+        className="absolute inset-x-0 bottom-0 h-[2px] origin-left bg-steel"
         style={{ scaleX: scrollYProgress }}
         aria-hidden="true"
       />

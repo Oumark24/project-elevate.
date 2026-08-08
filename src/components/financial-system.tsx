@@ -185,7 +185,7 @@ export function FinancialSystem() {
                   inputMode="decimal"
                   value={allowance}
                   onChange={handleAllowanceChange}
-                  className="w-full rounded-md border border-border bg-background px-3 py-3 pl-8 text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/20 motion-reduce:transition-none"
+                  className="w-full rounded-md border border-border bg-background px-3 py-3 pl-8 text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-steel focus:ring-2 focus:ring-steel/20 motion-reduce:transition-none"
                   placeholder="120.00"
                 />
               </div>
@@ -213,7 +213,7 @@ export function FinancialSystem() {
                       inputMode="decimal"
                       value={values[key]}
                       onChange={(event) => handleAllocationChange(key, event)}
-                      className="w-full rounded-md border border-border bg-background px-3 py-2.5 pr-8 text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/20 motion-reduce:transition-none"
+                      className="w-full rounded-md border border-border bg-background px-3 py-2.5 pr-8 text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-steel focus:ring-2 focus:ring-steel/20 motion-reduce:transition-none"
                       aria-describedby="allocation-guidance"
                     />
                     <span
@@ -236,7 +236,7 @@ export function FinancialSystem() {
             </p>
           </div>
 
-          <div className="rounded-lg border border-primary/30 bg-primary/[0.04] p-5 sm:p-8">
+          <div className="rounded-lg border border-steel/40 bg-steel/[0.04] p-5 sm:p-8">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-sm font-medium uppercase tracking-[0.16em] text-accent-fg">
@@ -267,7 +267,7 @@ export function FinancialSystem() {
                     <div className="flex items-center justify-between gap-4">
                       <div className="flex min-w-0 items-center gap-3">
                         <Icon
-                          className="size-5 shrink-0 text-primary"
+                          className="size-5 shrink-0 text-steel"
                           strokeWidth={1.75}
                           aria-hidden="true"
                         />
@@ -289,7 +289,7 @@ export function FinancialSystem() {
                       aria-hidden="true"
                     >
                       <div
-                        className="h-full rounded-full bg-primary transition-[width] duration-200 motion-reduce:transition-none"
+                        className="h-full rounded-full bg-steel transition-[width] duration-200 motion-reduce:transition-none"
                         style={{ width: `${Math.min(100, percentage)}%` }}
                       />
                     </div>

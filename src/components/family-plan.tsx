@@ -125,7 +125,7 @@ export function FamilyPlan() {
 
           <div className="mt-6 h-2 overflow-hidden rounded-full bg-background">
             <div
-              className="h-full rounded-full bg-primary transition-[width] duration-200 motion-reduce:transition-none"
+              className="h-full rounded-full bg-sage transition-[width] duration-200 motion-reduce:transition-none"
               style={{ width: `${completion}%` }}
               aria-hidden="true"
             />
@@ -136,7 +136,7 @@ export function FamilyPlan() {
               <div key={title}>
                 <div className="flex items-center gap-3">
                   <Icon
-                    className="size-5 text-primary"
+                    className="size-5 text-sage"
                     strokeWidth={1.75}
                     aria-hidden="true"
                   />
@@ -152,7 +152,7 @@ export function FamilyPlan() {
                         type="checkbox"
                         checked={Boolean(completed[id])}
                         onChange={() => toggleCheckpoint(id)}
-                        className="peer mt-1 size-5 shrink-0 appearance-none rounded-full border border-border bg-background outline-none transition-colors hover:border-primary checked:border-primary checked:bg-primary focus-visible:ring-2 focus-visible:ring-primary/50 motion-reduce:transition-none"
+                        className="peer mt-1 size-5 shrink-0 appearance-none rounded-full border border-border bg-background outline-none transition-colors hover:border-sage checked:border-sage checked:bg-sage focus-visible:ring-2 focus-visible:ring-sage/50 motion-reduce:transition-none"
                       />
                       <span className="relative -ml-8 mt-1 flex size-5 shrink-0 items-center justify-center text-background opacity-0 peer-checked:opacity-100">
                         <Check className="size-3" strokeWidth={3} aria-hidden="true" />
