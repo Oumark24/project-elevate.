@@ -96,7 +96,7 @@ export function SiteHeader() {
               <li key={item.id}>
                 <a
                   href={item.href}
-                  className={`text-sm transition-colors ${
+                  className={`rounded-sm text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
                     activeSection === item.id
                       ? "text-foreground"
                       : "text-muted-foreground hover:text-foreground"
@@ -172,7 +172,7 @@ export function SiteHeader() {
                     <li key={item.id}>
                       <a
                         href={item.href}
-                        className={`block rounded-md px-3 py-3 text-lg transition-colors ${
+                        className={`block rounded-md px-3 py-3 text-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
                           activeSection === item.id
                             ? "bg-muted text-foreground"
                             : "text-muted-foreground hover:bg-muted hover:text-foreground"

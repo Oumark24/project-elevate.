@@ -152,7 +152,7 @@ export function FamilyPlan() {
                         type="checkbox"
                         checked={Boolean(completed[id])}
                         onChange={() => toggleCheckpoint(id)}
-                        className="peer mt-1 size-5 shrink-0 appearance-none rounded-full border border-border bg-background outline-none transition-colors checked:border-primary checked:bg-primary focus-visible:ring-2 focus-visible:ring-primary/50 motion-reduce:transition-none"
+                        className="peer mt-1 size-5 shrink-0 appearance-none rounded-full border border-border bg-background outline-none transition-colors hover:border-primary checked:border-primary checked:bg-primary focus-visible:ring-2 focus-visible:ring-primary/50 motion-reduce:transition-none"
                       />
                       <span className="relative -ml-8 mt-1 flex size-5 shrink-0 items-center justify-center text-background opacity-0 peer-checked:opacity-100">
                         <Check className="size-3" strokeWidth={3} aria-hidden="true" />
