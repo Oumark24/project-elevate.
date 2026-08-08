@@ -6,9 +6,7 @@ import {
   motion,
   useReducedMotion,
   useScroll,
-  useTransform,
-} from "framer-motion";
-import * as React from "react";
+} from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
 const navigation = [
@@ -19,25 +17,6 @@ const navigation = [
   { label: "Family Plan", href: "#family", id: "family" },
 ];
 
-type MotionAnimationProps = {
-  initial?: boolean | Record<string, number | string>;
-  animate?: Record<string, number | string>;
-  exit?: Record<string, number | string>;
-  transition?: Record<string, number | string | undefined>;
-  style?: React.CSSProperties | Record<string, unknown>;
-};
-
-type AnimatedDivProps = React.HTMLAttributes<HTMLDivElement> &
-  MotionAnimationProps;
-type AnimatedAsideProps = React.HTMLAttributes<HTMLElement> &
-  MotionAnimationProps &
-  React.RefAttributes<HTMLElement>;
-
-const AnimatedDiv =
-  motion.div as unknown as React.ComponentType<AnimatedDivProps>;
-const AnimatedAside =
-  motion.aside as unknown as React.ComponentType<AnimatedAsideProps>;
-
 export function SiteHeader() {
   const [activeSection, setActiveSection] = useState("overview");
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -46,10 +25,6 @@ export function SiteHeader() {
   const hadDrawerOpen = useRef(false);
   const prefersReducedMotion = useReducedMotion();
   const { scrollYProgress } = useScroll();
-  const progressTransform = useTransform(
-    scrollYProgress,
-    (progress) => `scaleX(${progress})`,
-  );
 
   useEffect(() => {
     const sections = navigation
@@ -105,7 +80,7 @@ export function SiteHeader() {
     : { type: "spring" as const, stiffness: 300, damping: 30 };
 
   return (
-    <header className="relative sticky top-0 z-50 border-b border-border/60 bg-background/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a
           href="#overview"
@@ -152,20 +127,20 @@ export function SiteHeader() {
 
       <motion.div
         className="absolute inset-x-0 bottom-0 h-[2px] origin-left bg-primary"
-        style={{ transform: progressTransform }}
+        style={{ scaleX: scrollYProgress }}
         aria-hidden="true"
       />
 
       <AnimatePresence>
         {drawerOpen && (
-          <AnimatedDiv
+          <motion.div
             className="fixed inset-0 z-50 bg-background md:hidden"
             initial={prefersReducedMotion ? false : { opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={prefersReducedMotion ? undefined : { opacity: 0 }}
             transition={{ duration: prefersReducedMotion ? 0 : 0.2 }}
           >
-            <AnimatedAside
+            <motion.aside
               id="mobile-navigation"
               ref={drawerRef}
               role="dialog"
@@ -213,8 +188,8 @@ export function SiteHeader() {
                   ))}
                 </ul>
               </nav>
-            </AnimatedAside>
-          </AnimatedDiv>
+            </motion.aside>
+          </motion.div>
         )}
       </AnimatePresence>
     </header>
