@@ -1,12 +1,19 @@
 "use client";
 
 import { motion, useReducedMotion } from "motion/react";
+import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
   const prefersReducedMotion = useReducedMotion();
-  const shouldAnimate = prefersReducedMotion !== true;
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const shouldAnimate = mounted && prefersReducedMotion !== true;
 
   return (
     <section

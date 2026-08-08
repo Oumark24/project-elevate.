@@ -115,7 +115,7 @@ export function SiteHeader() {
         <button
           ref={triggerRef}
           type="button"
-          className="rounded-md p-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring md:hidden"
+          className="size-11 rounded-md p-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring md:hidden"
           aria-label="Open navigation menu"
           aria-expanded={drawerOpen}
           aria-controls="mobile-navigation"
@@ -159,7 +159,7 @@ export function SiteHeader() {
                 </span>
                 <button
                   type="button"
-                  className="rounded-md p-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  className="size-11 rounded-md p-2 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   aria-label="Close navigation menu"
                   onClick={closeDrawer}
                 >

@@ -173,15 +173,15 @@ export function Workspace() {
               value={stage}
               onChange={(event) => setStage(Number(event.target.value))}
               aria-valuetext={currentStage.title}
-              className="h-2 w-full cursor-pointer rounded-full accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              className="h-11 w-full cursor-pointer rounded-full accent-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             />
-            <div className="mt-4 grid grid-cols-5 gap-2">
+            <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-5">
               {independenceStages.map(({ title }, index) => (
                 <button
                   key={title}
                   type="button"
                   onClick={() => setStage(index)}
-                  className={`rounded-sm text-left text-xs leading-5 transition-colors hover:bg-muted focus-visible:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring motion-reduce:transition-none ${
+                  className={`min-h-11 rounded-sm text-left text-xs leading-5 transition-colors hover:bg-muted focus-visible:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring motion-reduce:transition-none ${
                     index === stage
                       ? "font-medium text-accent-fg"
                       : "text-muted-foreground hover:text-foreground"
