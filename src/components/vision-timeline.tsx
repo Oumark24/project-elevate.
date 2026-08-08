@@ -29,7 +29,7 @@ export function VisionTimeline() {
     >
       <div className="mx-auto w-full max-w-5xl">
         <div className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent-fg">
             Vision
           </p>
           <h2 className="mt-4 text-3xl font-medium tracking-tight text-foreground sm:text-5xl">

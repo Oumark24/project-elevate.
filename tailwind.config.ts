@@ -18,6 +18,7 @@ const config: Config = {
         secondary: { DEFAULT: "hsl(var(--secondary))", foreground: "hsl(var(--secondary-foreground))" },
         muted: { DEFAULT: "hsl(var(--muted))", foreground: "hsl(var(--muted-foreground))" },
         accent: { DEFAULT: "hsl(var(--accent))", foreground: "hsl(var(--accent-foreground))" },
+        "accent-fg": "hsl(var(--accent-text))",
         destructive: { DEFAULT: "hsl(var(--destructive))", foreground: "hsl(var(--foreground))" },
       },
       borderRadius: { sm: "var(--radius-sm)", md: "var(--radius-md)", lg: "var(--radius-lg)" },

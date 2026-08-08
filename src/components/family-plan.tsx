@@ -92,7 +92,7 @@ export function FamilyPlan() {
     >
       <div className="mx-auto w-full max-w-5xl">
         <div className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent-fg">
             Family Plan
           </p>
           <h2 className="mt-4 text-3xl font-medium tracking-tight text-foreground sm:text-5xl">
@@ -107,7 +107,7 @@ export function FamilyPlan() {
         <div className="mt-12 rounded-lg border border-border bg-muted/20 p-5 sm:p-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-sm font-medium uppercase tracking-[0.16em] text-primary">
+              <p className="text-sm font-medium uppercase tracking-[0.16em] text-accent-fg">
                 Weekly Scorecard
               </p>
               <h3 className="mt-3 text-2xl font-medium text-foreground">
@@ -167,7 +167,7 @@ export function FamilyPlan() {
         </div>
 
         <div className="mt-20 max-w-3xl">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent-fg">
             Family Agreement
           </p>
           <h3 className="mt-4 text-2xl font-medium tracking-tight text-foreground sm:text-4xl">
@@ -183,12 +183,12 @@ export function FamilyPlan() {
         <div className="mt-10 rounded-lg border border-border bg-background p-5 sm:p-8">
           <div className="grid gap-px overflow-hidden rounded-md border border-border bg-border md:grid-cols-2">
             <div className="bg-muted/20 p-5 sm:p-6">
-              <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary">
+              <p className="text-xs font-medium uppercase tracking-[0.16em] text-accent-fg">
                 What I&apos;m responsible for
               </p>
             </div>
             <div className="hidden bg-muted/20 p-5 sm:p-6 md:block">
-              <p className="text-xs font-medium uppercase tracking-[0.16em] text-primary">
+              <p className="text-xs font-medium uppercase tracking-[0.16em] text-accent-fg">
                 What I&apos;m asking for
               </p>
             </div>
@@ -200,7 +200,7 @@ export function FamilyPlan() {
                   </p>
                 </div>
                 <div className="bg-background p-5 sm:p-6">
-                  <p className="mb-2 text-xs font-medium uppercase tracking-[0.16em] text-primary md:hidden">
+                  <p className="mb-2 text-xs font-medium uppercase tracking-[0.16em] text-accent-fg md:hidden">
                     What I&apos;m asking for
                   </p>
                   <p className="text-sm leading-7 text-muted-foreground">

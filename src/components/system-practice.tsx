@@ -70,7 +70,7 @@ export function ComputerScienceRoadmap() {
     >
       <div className="mx-auto w-full max-w-5xl">
         <div className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent-fg">
             Computer Science Roadmap
           </p>
           <h2 className="mt-4 text-3xl font-medium tracking-tight text-foreground sm:text-5xl">
@@ -95,7 +95,7 @@ export function ComputerScienceRoadmap() {
                 />
               )}
               <div className="flex items-center justify-between">
-                <span className="text-xs font-medium tabular-nums text-primary">
+                <span className="text-xs font-medium tabular-nums text-accent-fg">
                   0{index + 1}
                 </span>
                 <Icon
@@ -126,7 +126,7 @@ export function QuranPractice() {
     >
       <div className="mx-auto w-full max-w-5xl">
         <div className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent-fg">
             Tarteel / Qur&apos;an
           </p>
           <h2 className="mt-4 text-3xl font-medium tracking-tight text-foreground sm:text-5xl">
@@ -148,7 +148,7 @@ export function QuranPractice() {
                     aria-hidden="true"
                   />
                 )}
-                <span className="flex size-10 shrink-0 items-center justify-center rounded-full border border-primary/40 text-sm font-medium text-primary">
+                <span className="flex size-10 shrink-0 items-center justify-center rounded-full border border-primary/40 text-sm font-medium text-accent-fg">
                   0{index + 1}
                 </span>
                 <div className="min-w-0 md:mt-5">

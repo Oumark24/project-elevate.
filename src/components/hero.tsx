@@ -19,7 +19,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <p className="mb-6 text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="mb-6 text-sm font-medium uppercase tracking-[0.2em] text-accent-fg">
             Project Elevate
           </p>
           <h1 className="max-w-3xl text-4xl font-medium leading-[1.1] tracking-tight text-foreground sm:text-6xl lg:text-7xl">

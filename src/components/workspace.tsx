@@ -80,7 +80,7 @@ export function Workspace() {
     >
       <div className="mx-auto w-full max-w-5xl">
         <div className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent-fg">
             My Workspace
           </p>
           <h2 className="mt-4 text-3xl font-medium tracking-tight text-foreground sm:text-5xl">
@@ -136,7 +136,7 @@ export function Workspace() {
         </div>
 
         <div className="mt-20 max-w-3xl">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent-fg">
             Earned access
           </p>
           <h3 className="mt-4 text-2xl font-medium tracking-tight text-foreground sm:text-4xl">
@@ -183,7 +183,7 @@ export function Workspace() {
                   onClick={() => setStage(index)}
                   className={`rounded-sm text-left text-xs leading-5 transition-colors hover:bg-muted focus-visible:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring motion-reduce:transition-none ${
                     index === stage
-                      ? "font-medium text-primary"
+                      ? "font-medium text-accent-fg"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                   aria-label={`Select ${title}`}
@@ -212,7 +212,7 @@ export function Workspace() {
                 exit={shouldAnimate ? { opacity: 0, x: -12 } : undefined}
                 transition={{ duration: 0.25, ease: "easeOut" }}
               >
-                <p className="text-sm font-medium uppercase tracking-[0.16em] text-primary">
+                <p className="text-sm font-medium uppercase tracking-[0.16em] text-accent-fg">
                   Current stage
                 </p>
                 <h4 className="mt-3 text-2xl font-medium text-foreground">

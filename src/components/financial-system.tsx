@@ -140,7 +140,7 @@ export function FinancialSystem() {
     >
       <div className="mx-auto w-full max-w-5xl">
         <div className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-primary">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent-fg">
             Financial System
           </p>
           <h2 className="mt-4 text-3xl font-medium tracking-tight text-foreground sm:text-5xl">
@@ -239,7 +239,7 @@ export function FinancialSystem() {
           <div className="rounded-lg border border-primary/30 bg-primary/[0.04] p-5 sm:p-8">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-sm font-medium uppercase tracking-[0.16em] text-primary">
+                <p className="text-sm font-medium uppercase tracking-[0.16em] text-accent-fg">
                   Allocation summary
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground">
