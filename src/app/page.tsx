@@ -6,6 +6,7 @@ import {
   QuranPractice,
 } from "@/components/system-practice";
 import { VisionTimeline } from "@/components/vision-timeline";
+import { Workspace } from "@/components/workspace";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <SixPillars />
       <ComputerScienceRoadmap />
       <QuranPractice />
+      <Workspace />
       <VisionTimeline />
       <section
         id="family"
