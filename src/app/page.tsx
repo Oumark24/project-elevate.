@@ -1,27 +1,29 @@
 import { Hero } from "@/components/hero";
-
-const sections = [
-  { id: "goals", label: "My Goals" },
-  { id: "system", label: "My System" },
-  { id: "future", label: "My Future" },
-  { id: "family", label: "Family Plan" },
-];
+import { CurrentState } from "@/components/current-state";
+import { VisionTimeline } from "@/components/vision-timeline";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      {sections.map((section) => (
-        <section
-          key={section.id}
-          id={section.id}
-          className="flex min-h-screen scroll-mt-16 items-center justify-center p-8"
-        >
-          <h1 className="text-2xl font-medium text-muted-foreground">
-            {section.label}
-          </h1>
-        </section>
-      ))}
+      <CurrentState />
+      <section
+        id="system"
+        className="flex min-h-screen scroll-mt-16 items-center justify-center p-8"
+      >
+        <h1 className="text-2xl font-medium text-muted-foreground">
+          My System
+        </h1>
+      </section>
+      <VisionTimeline />
+      <section
+        id="family"
+        className="flex min-h-screen scroll-mt-16 items-center justify-center p-8"
+      >
+        <h1 className="text-2xl font-medium text-muted-foreground">
+          Family Plan
+        </h1>
+      </section>
     </main>
   );
 }
